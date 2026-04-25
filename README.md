@@ -2,7 +2,7 @@
 
 
 
-This repository contains the official implementation of the DADF framework for non-stationary sequence forecasting (with a focus on wind speed prediction), alongside the data preprocessing, model training, and evaluation scripts. 
+This repository contains the implementation of the DADF framework for non-stationary sequence forecasting (with a focus on wind speed prediction), alongside the data preprocessing, model training, and evaluation scripts. 
 
 
 
