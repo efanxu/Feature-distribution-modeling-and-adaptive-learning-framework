@@ -1,56 +1,55 @@
-# \# Distribution Adaptive Decomposition Forecasting (DADF) Framework
+### \# Distribution Adaptive Decomposition Forecasting (DADF) Framework
 
-# 
 
-# This repository contains the official implementation of the DADF framework for non-stationary sequence forecasting (with a focus on wind speed prediction), alongside the data preprocessing, model training, and evaluation scripts. 
 
-# 
+This repository contains the official implementation of the DADF framework for non-stationary sequence forecasting (with a focus on wind speed prediction), alongside the data preprocessing, model training, and evaluation scripts. 
 
-# \## 1. Repository Structure
 
-# 
 
-# The project pipeline is modularized. The core directories and scripts are organized as follows:
+#### \## 1. Repository Structure
 
-# 
 
-# \- `main.py`: The main entry point to run the pipeline, set hyperparameters, and trigger parameter sensitivity analysis.
 
-# \- `pipeline.py`: The core `TimeSeriesForecasting` class handling data splitting, dynamic time warping extension (DTWE), signal decomposition, and ensemble predictions.
+The project pipeline is modularized. The core directories and scripts are organized as follows:
 
-# \- `module/`
 
-# &#x20; - `preprocessing/`: Scripts for data preprocessing and STL signal decomposition.
 
-# &#x20; - `models/`: Implementations of Extreme Learning Machines (ELM) and Sparrow Search Algorithm (SSA) optimization (utilizing L2 regularization for robust generalization).
+ \- `main.py`: The main entry point to run the pipeline, set hyperparameters, and trigger parameter sensitivity analysis.
 
-# &#x20; - `utils/`: Includes the core implementation of the DTW extension (`dtw\_extension.py`).
+ \- `pipeline.py`: The core `TimeSeriesForecasting` class handling data splitting, dynamic time warping extension (DTWE), signal decomposition, and ensemble predictions.
 
-# &#x20; - `index/`: Evaluation metrics (MAE, RMSE, MAPE, IA) and statistical tests.
+ \- `module/`
 
-# \- `requirements.txt`: Software versions and dependencies required to reproduce the environment.
+ &#x20; - `preprocessing/`: Scripts for data preprocessing and STL signal decomposition.
 
-# 
+ &#x20; - `models/`: Implementations of Extreme Learning Machines (ELM) and Sparrow Search Algorithm (SSA) optimization (utilizing L2 regularization for robust generalization).
 
-# \## 2. Software Versions \& Environment
+ &#x20; - `utils/`: Includes the core implementation of the DTW extension (`dtw\_extension.py`).
 
-# 
+ &#x20; - `index/`: Evaluation metrics (MAE, RMSE, MAPE, IA) and statistical tests.
 
-# The code has been developed and tested using \*\*Python 3.12 / 3.9\*\*. To ensure full reproducibility, please set up the environment using the provided requirements file:
+ \- `requirements.txt`: Software versions and dependencies required to reproduce the environment.
 
-# 
 
-# ```bash
+#### \## 2. Software Versions \& Environment
 
-# \# Create a virtual environment (optional but recommended)
 
-# conda create -n dadf\_env python=3.12
 
-# conda activate dadf\_env
+ The code has been developed and tested using \*\*Python 3.12 / 3.9\*\*. To ensure full reproducibility, please set up the environment using the provided requirements file:
 
-# 
 
-# \# Install dependencies
 
-# pip install -r requirements.txt
+ ```bash
+
+ \# Create a virtual environment (optional but recommended)
+
+ conda create -n dadf\_env python=3.12
+
+ conda activate dadf\_env
+
+ 
+
+ \# Install dependencies
+
+ pip install -r requirements.txt
 
